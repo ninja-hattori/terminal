@@ -1,0 +1,51 @@
+:root {
+  /* default dark mode */
+  --text-color: #fffffd;
+  --bg-color: #22252e;
+  --selection-color: #519975;
+  --cursor-color: #fffffd;
+  --command-color: #26534b;
+  --liner-color: #26534b;
+  --index-color: #dcdccc;
+  --color2-color: #b89076;
+  --cmd-color: #73abad;
+  --cmd-shadow: #73abad;
+  --error-color: #b89076;
+  --link-color: #9c8394;
+  --link-hover-color: #519975;
+  --link-hover-bg: #22252e;
+}
+
+[data-theme='dark']{
+  --text-color: #fffffd;
+  --bg-color: #22252e;
+  --selection-color: #519975;
+  --cursor-color: #fffffd;
+  --command-color: #26534b;
+  --liner-color: #26534b;
+  --index-color: #dcdccc;
+  --color2-color: #b89076;
+  --cmd-color: #73abad;
+  --cmd-shadow: #73abad;
+  --error-color: #b89076;
+  --link-color: #9c8394;
+  --link-hover-color: #519975;
+  --link-hover-bg: #22252e;
+}
+
+[data-theme='light']{
+  --text-color: #33415a;
+  --bg-color: #eff3f3;
+  --selection-color: #308efd;
+  --cursor-color: #33415a;
+  --command-color: #027474;
+  --liner-color: #027474;
+  --index-color: #a8a8a8;
+  --color2-color: #33415a;
+  --cmd-color: #117dbd;
+  --cmd-shadow: none;
+  --error-color: #ff818a;
+  --link-color: #117dbd;
+  --link-hover-color: #308efd;
+  --link-hover-bg: #eff3f3;
+}
