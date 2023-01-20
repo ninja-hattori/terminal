@@ -9,8 +9,6 @@ let git = 0;
 
 loadTheme();
 
-// addLine(
-//   'visitor@ninja-hattori.com:~$ <span class="command">WELCOME')
 
 setTimeout(function () {
   loopLines(banner, '', 80);
@@ -42,46 +40,6 @@ function keyDown(e) {
   }
 }
 
-// addLine(
-//   'visitor@ninja-hattori.com:~$ <span class="command">' +
-//     command.innerHTML +
-//     '</span>',
-//   'liner no-animation',
-//   0
-// );
-
-
-// '<span style="margin-bottom: -50px !important;"><span style="letter-spacing: -0.299em; margin-left: -0.05em;">&nbsp--------</span><span style="letter-spacing: -0.2em;">&nbsp</span>(visitor@ninja-hattori.com)</span><span><br style=\'content: "A" !important;display: block !important;margin-bottom: -0.6em !important;\'>|<br><br style=\'content: "A" !important;display: block !important;margin-bottom: -0.19em !important;\'>|<br style=\'content: "A" !important;display: block !important;margin-top: -0.7em !important;\'><span style="letter-spacing: -0.299em; margin-left: -0.05em;">&nbsp---</span><span style="letter-spacing: -0.2em;">&nbsp</span>$</span><span id="typer" style="margin-top: 0px !important;"></span> <span class="command">' +
-
-
-// function enterKey(e) {
-//   if (e.keyCode == 13) {
-//     commands.push(command.innerHTML);
-//     git = commands.length;
-//     addLine(
-//       '<span style="margin-bottom: -50px !important;"><span style="letter-spacing: -0.299em; margin-left: -0.05em;">&nbsp--------</span><span style="letter-spacing: -0.2em;">&nbsp</span><span style="font-weight:bold;">(<span style="color: #246dda;">visitor@ninja-hattori.com</span>)-[<span style="color: #d6dce2;">~</span></span>]</span></span><span><br style=\'content: "A" !important;display: block !important;margin-bottom: -0.6em !important;\'>|<br><br style=\'content: "A" !important;display: block !important;margin-bottom: -0.19em !important;\'>|<br style=\'content: "A" !important;display: block !important;margin-top: -0.7em !important;\'><span style="letter-spacing: -0.299em; margin-left: -0.05em;">&nbsp---</span><span style="letter-spacing: -0.2em;">&nbsp</span><span style="color: #d6dce2; font-weight: bold;">$</span></span><span style="margin-top: 0px !important;"></span> <span class="command">' +
-//       command.innerHTML +
-//       '</span>',
-//       'liner no-animation',
-//       0
-//     );
-//     commander(command.innerHTML.toLowerCase());
-//     command.innerHTML = '';
-//     textarea.value = '';
-//   }
-//   if (e.keyCode == 38 && git != 0) {
-//     previousCMD();
-//   }
-//   if (e.keyCode == 40 && git != commands.length) {
-//     git += 1;
-//     if (commands[git] === undefined) {
-//       textarea.value = '';
-//     } else {
-//       textarea.value = commands[git];
-//     }
-//     command.innerHTML = textarea.value;
-//   }
-// }
 
 function enterKey(e) {
   if (e.keyCode == 13) {
@@ -156,6 +114,8 @@ function commander(cmd) {
       newTab(email);
       break;
     case 'github':
+      addLine('Opening Github...', 'color2', 0);
+      newTab(github);
       break;
     case 'help':
       loopLines(help, 'color margin', 80);
@@ -164,6 +124,10 @@ function commander(cmd) {
       addLine('<br>', '', 0);
       loopLines(commands, 'color2', 80);
       addLine('<br>', 'command', 80 * commands.length + 50);
+      break;
+    case 'linkedin':
+      addLine('Opening LinkedIn...', 'color2', 0);
+      newTab(linkedin);
       break;
     case 'projects':
       loopLines(projects, 'color margin', 80);
@@ -175,13 +139,8 @@ function commander(cmd) {
     case 'social':
       loopLines(social, 'color margin', 80);
       break;
-    case 'linkedin':
-      addLine('Opening LinkedIn...', 'color2', 0);
-      newTab(linkedin);
-      break;
-    case 'github':
-      addLine('Opening GitHub...', 'color2', 0);
-      newTab(github);
+    case 'whoami':
+      addLine('visitor','',0);
       break;
     default:
       addLine(
