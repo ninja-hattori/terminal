@@ -1,12 +1,14 @@
-let twitter = 'http://www.twitter.com/alvaldes_';
-let linkedin = 'https://www.linkedin.com/in/alvaldes/';
-let github = 'https://github.com/alvaldes/';
-let email = 'mailto:angelluis2605@gmail.com';
-let website = 'https://www.alvaldes.vercel.app/';
-let repo = 'https://github.com/alvaldes/aterm';
+// let twitter = 'http://www.twitter.com/alvaldes_';
+let linkedin = 'https://www.linkedin.com/in/shabdik/';
+let github = 'https://github.com/ninja-hattori/';
+let email = 'mailto:shabdik.dns@gmail.com';
+// let website = 'https://www.alvaldes.vercel.app/';
+let repo = 'https://github.com/ninja-hattori/interactive-terminal';
+let facebook = 'https://www.facebook.com/shabdik.chakraborty/';
 let existCommands = [
   'about',
   'banner',
+  'certificates',
   'clear',
   'cls',
   'date',
@@ -20,65 +22,81 @@ let existCommands = [
   'projects',
   'repo',
   'social',
-  // 'theme',
-  // 'theme ls',
-  // 'theme set',
-  'twitter',
   'whoami',
-  // 'weather',
 ];
 
-about = ["Hello, I'm Angel Valdés👋"];
+about = [
+  'Hello, I\'m <span style="font-weight:bold">Shabdik Chakraborty</span>👋.',
+  "<br>",
+  'A highly motivated and detail-oriented <span style="font-weight:bold">Cybersecurity Professional</span> with over one year of experience ',
+  'and a <span style="font-weight:bold">Certified Ethical Hacker(CEHv11)</span> certification.'
+
+];
 
 education = [
   'Here is my education background!',
-  '<span style="font-weight:bold;">B.Tech in Computer Science</span>'
+  '<br>',
+  '<span style="font-weight:bold;font-size:15px">B.Tech in Computer Science</span>',
+  '<span style="">Government College of Engineering and Ceramic Technology | Kolkata, India | 2017 ~ 2021</span>',
+  '<br>',
+  '<span style="font-weight:bold;font-size:15px">High Secondary</span>',
+  '<span style="">Doon Public School | Dhanbad, India | 2015 ~ 2017</span>',
+  '<br>',
+  '<span style="font-weight:bold;font-size:15px">Secondary</span>',
+  '<span style="">De Nobili School | Maithon, India | 2003 ~ 2015</span>',
 ]
 
+certificates = [
+  'Here are my certificates!',
+  '<br>',
+  '<span style="font-weight:bold;font-size:15px">Fundamentals of Auditing and Assessment of IT/ICT Environment</span>',
+  '<span style="">CDAC | 2023</span>',
+  '<br>',
+  '<span style="font-weight:bold;font-size:15px">Certified Ethical Hacker(CEHv11)</span>',
+  '<span style="">EC-Council | 2022</span>',
+  '<br>',
+  '<span style="font-weight:bold;font-size:15px">Ethical Hacking and Security Fundamentals</span>',
+  '<span style="">Diginique Tech Labs | 2020</span>',
+  '<br>',
+  '<span style="font-weight:bold;font-size:15px">Programming with Python</span>',
+  '<span style="">Internshala Training | 2019</span>',
+  '<br>',
+  '<span style="font-weight:bold;font-size:15px">Web Development</span>',
+  '<span style="">Internshala Training | 2019</span>',
+];
+
 social = [
-  'twitter           <a href="' +
-  twitter +
-  '" target="_blank">twitter/alvaldes_</a>',
+  'facebook           <a href="' +
+  facebook +
+  '" target="_blank">facebook/shabdik</a>',
   'linkedin          <a href="' +
   linkedin +
-  '" target="_blank">linkedin/alvaldes</a>',
+  '" target="_blank">linkedin/shabdik</a>',
   'github            <a href="' +
   github +
-  '" target="_blank">github/alvaldes</a>',
+  '" target="_blank">github/shabdik</a>',
 ];
 
 projects = ['On Progress ......'];
 
-// themes = ['dark', 'light'];
-
-// theme = [
-//   'Usage: theme [arg]',
-//   'Args:',
-//   '  - ls: list all available themes',
-//   '  - set: set a theme',
-//   '  - random: set a tandom theme',
-//   '<br>',
-//   'Example:',
-//   '  theme ls # to list all available themes',
-//   '  theme set light # to set a theme',
-// ];
 
 help = [
   '<span class="command">about</span>              Who is Ninja Hattori?',
   '<span class="command">banner</span>             Display the header',
+  '<span class="command">certificates</span>       Display the certificates',
   '<span class="command">clear | cls</span>        Clear the teminal',
   '<span class="command">date</span>               Display the actual date',
   '<span class="command">education</span>          my education background',
   '<span class="command">email</span>              Send me an email',
   // '<span class="command">gui</span>                Open the Portfolio Website',
+  '<span class="command">github</span>             Open the GitHub',
   '<span class="command">help</span>               Check available commands',
   '<span class="command">history</span>            View command history',
+  '<span class="command">linkedin</span>           Open the LinkedIn',
   '<span class="command">projects</span>           View coding projects',
   '<span class="command">repo</span>               Open the source code',
   '<span class="command">social</span>             Display social networks',
   '<span class="command">whoami</span>             About current user',
-  // '<span class="command">theme</span>              Theme configurations',
-  // '<span class="command">weather</span>            Display the weather of a [city]',
   '<br>',
   '[TAB]              Trigger completion',
   '[Ctrl+l]           Clear terminal',
@@ -107,35 +125,3 @@ banner = [
 '<span class="color2">If you would like to see a list of the commands that are available, please type</span> <span class="command">\'help\'</span><span class="color2">.</span>',
 ];
 
-// banner = [
-// '<span class="command">     .........                          </span>',
-// '<span class="command">              .::::-:                   </span>',
-// '<span class="command">    ........:::::::-+                   </span>',
-// '<span class="command">  .         .:::::--:=.    .            </span>',
-// '<span class="command">       .....         =#*+++=-...        </span>',
-// '<span class="command">     ..            :*=.    .-=+*=.      </span>',
-// '<span class="command">                   *-          .*#:     </span>',
-// '<span class="command">                   #-             =:    </span>',
-// '<span class="command">                   :*-.                 </span>',
-// '<span class="command">                     -=+====-::.        </span>',
-// '<span class="command">                            .-+#+-=-    </span>',
-// '<span class="command">                                =+..-:  </span>',
-// '<span class="command">                                  +- .. </span>',
-// '<span class="command">                                   =:   </span>',
-// '<span class="command">                                    =   </span>',
-// '<span class="command">                                    .   </span>',
-// '<span class="command">                                    .   </span>',
-// '<span class="color2">Hello and welcome to my interactive web terminal!</span>',
-// '<span class="color2">If you would like to see a list of the commands that are available, please type</span> <span class="command">\'help\'</span><span class="color2">.</span>',
-// ];
-
-
-
-// banner = [
-//   '<div>',
-//   '<p id="welcome"><b>WELCOME</b></p>',
-//   '<img src="images/waving-emon_hi2.gif" class="img1" alt=""><br/>',
-//   '<span class="color2">Hello and welcome to my interactive web terminal!</span>',
-//   '<span class="color2">If you would like to see a list of the commands that are available, please type</span> <span class="command">\'help\'</span><span class="color2">.</span>',
-//   '</div>',
-// ];
