@@ -77,7 +77,17 @@ social = [
   '" target="_blank">github/shabdik</a>',
 ];
 
-projects = ['On Progress ......'];
+projects = [
+  '"Actions speak louder than words, demonstrate the implementation."? I got you.',
+  'Here are some of my projects!',
+  '<br>',
+  '<span style="font-weight:bold;font-size:15px">AutoRecon</span>',
+  '<span style="">A simple tool built using python which performs automated enumeration of services. It is intended as a',
+  'time-saving tool for use in CTFs. It may also be useful in real-world engagements.</span>',
+  '<br>',
+  '<span style="font-weight:bold;font-size:15px">DirEnum</span>',
+  '<span style="">A tool built using python to brute force directories and files names on web/application servers.</span>',
+];
 
 
 help = [
