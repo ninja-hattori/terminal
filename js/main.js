@@ -87,6 +87,9 @@ function commander(cmd) {
     case 'about':
       loopLines(about, 'color margin', 80);
       break;
+    case 'achievements':
+      loopLines(achievements, 'color margin', 80);
+      break;
     case 'banner':
       loopLines(banner, '', 80);
       break;
