@@ -66,7 +66,7 @@ certificates = [
 ];
 
 social = [
-  'facebook           <a href="' +
+  'facebook          <a href="' +
   facebook +
   '" target="_blank">facebook/shabdik</a>',
   'linkedin          <a href="' +
@@ -84,9 +84,11 @@ projects = [
   '<span style="font-weight:bold;font-size:15px">AutoRecon</span>',
   '<span style="">A simple tool built using python which performs automated enumeration of services. It is intended as a',
   'time-saving tool for use in CTFs. It may also be useful in real-world engagements.</span>',
+  '<span>You can check it out <a href="https://github.com/ninja-hattori/AutoRecon">here</a></span>',
   '<br>',
   '<span style="font-weight:bold;font-size:15px">DirEnum</span>',
   '<span style="">A tool built using python to brute force directories and files names on web/application servers.</span>',
+  '<span>You can check it out <a href="https://github.com/ninja-hattori/DirEnum">here</a></span>',
 ];
 
 
