@@ -94,7 +94,7 @@ function commander(cmd) {
       loopLines(banner, '', 80);
       break;
     case 'certificates':
-      loopLines(certificates, '', 80);
+      loopLines(certificates, 'color margin', 80);
       break;
     case 'clear':
       cls();
